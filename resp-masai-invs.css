@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-bottom{
+    width: 150px;
+    height: 50px;
+}
+
+.investors{
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "b1 b2 b3 b4"
+                         "b5 b6 b7 b8"
+                         "b9 b10 b11 b12"
+                         "b13 b14 b15 b16"
+                         "b17 b18 b19 ."
+    ;
+    gap: 4%;
+    padding:4%;
+    /* justify-content: center; */
+}
+.investors>div{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.img-main{
+    width: 100%;
+    border-radius: 10px;
+}
+.investors>div>p{
+    color:#8b7c70;
+    font-size: 20px;
+}
+.investors>div:nth-child(1){
+    grid-area: b1;
+}
+.investors>div:nth-child(2){
+    grid-area: b2;
+}
+.investors>div:nth-child(3){
+    grid-area: b3;
+}
+.investors>div:nth-child(4){
+    grid-area: b4;
+}
+.investors>div:nth-child(5){
+    grid-area: b5;
+}
+.investors>div:nth-child(6){
+    grid-area: b6;
+}
+.investors>div:nth-child(7){
+    grid-area: b7;
+}
+.investors>div:nth-child(8){
+    grid-area: b8;
+}
+.investors>div:nth-child(9){
+    grid-area: b9;
+}
+.investors>div:nth-child(10){
+    grid-area: b10;
+}
+.investors>div:nth-child(11){
+    grid-area: b11;
+}
+.investors>div:nth-child(12){
+    grid-area: b12;
+}
+.investors>div:nth-child(13){
+    grid-area: b13;
+}
+.investors>div:nth-child(14){
+    grid-area: b14;
+}
+.investors>div:nth-child(15){
+    grid-area: b15;
+}
+.investors>div:nth-child(16){
+    grid-area: b16;
+}
+.investors>div:nth-child(17){
+    grid-area: b17;
+}
+.investors>div:nth-child(18){
+    grid-area: b18;
+}
+.investors>div:nth-child(19){
+    grid-area: b19;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .investors{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "b1 b2 b3"
+                             "b4 b5 b6"
+                             "b7 b8 b9"
+                             "b10 b11 b12"
+                             "b13 b14 b15"
+                             "b16 b17 b18"
+                             "b19 . ."
+        ;
+        gap: 4%;
+        padding:4%;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 767px) {
+    .investors{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "b1 b2"
+                             "b3 b4"
+                             "b5 b6"
+                             "b7 b8"
+                             "b9 b10"
+                             "b11 b12"
+                             "b13 b14"
+                             "b15 b16"
+                             "b17 b18"
+                             "b19 ."
+        ;
+        gap: 4%;
+        padding:4%;
+        justify-content: center;
+    }
+}
